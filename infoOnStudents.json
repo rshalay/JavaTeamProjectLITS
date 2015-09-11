@@ -1,0 +1,47 @@
+[  
+    {  
+        "surname" : "Smith",
+        "post" : "Product Designer",
+        "salary" : "4000"
+    },
+    {  
+        "surname" : "Brown",
+        "post" : "Recruiting Manager",
+        "salary" : "4500"
+    },
+    {  
+        "surname" : "Johnson",
+        "post" : "Software Engineer",
+        "salary" : "6000"
+    },
+    {  
+        "surname" : "Brown",
+        "post" : "Mobile Engineer",
+        "salary" : "7000"
+    },
+    {  
+        "surname" : "Brown",
+        "post" : "Recruiting Manager",
+        "salary" : "4500"
+    },
+     {  
+        "surname" : "Johnson",
+        "post" : "Software Engineer",
+        "salary" : "7000"
+    },
+     {  
+        "surname" : "Johnson",
+        "post" : "Mobile Engineer",
+        "salary" : "8000"
+    },
+      {  
+        "surname" : "Johnson",
+        "post" : "Software Engineer",
+        "salary" : "6000"
+    },
+    {  
+        "surname" : "Brown",
+        "post" : "Mobile Engineer",
+        "salary" : "7500"
+    }
+]
