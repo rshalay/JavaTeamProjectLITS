@@ -3,6 +3,7 @@ package ua.com.lits.automation.java.homeworkProject;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.io.IOException;
 
@@ -24,7 +25,7 @@ public class StartCompilingProgram {
 		List<ParseData> parseData = objectMapper.readValue(input,
 				typeFactory.constructCollectionType(ArrayList.class, ParseData.class));
 		
-		Collections.sort(parseData);
+		Collections.sort(parseData,new SortData());
 		
 		for (ParseData item : parseData) {
 			
