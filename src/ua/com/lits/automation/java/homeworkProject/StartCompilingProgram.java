@@ -24,6 +24,8 @@ public class StartCompilingProgram {
 		List<ParseData> parseData = objectMapper.readValue(input,
 				typeFactory.constructCollectionType(ArrayList.class, ParseData.class));
 		
+		Collections.sort(parseData);
+		
 		for (ParseData item : parseData) {
 			
 			System.out.println(item.getSurname() + "\t" + item.getPost().concat(":") + "\t" + item.getSalary() + " $");
