@@ -26,7 +26,7 @@ public class StartCompilingProgram {
 		
 		for (ParseData item : parseData) {
 			
-			System.out.println(item.getSurname() + "\t" + item.getPost() + "\t\t" + item.getSalary());
+			System.out.println(item.getSurname() + "\t" + item.getPost().concat(":") + "\t" + item.getSalary() + " $");
 		}
 	}
 
