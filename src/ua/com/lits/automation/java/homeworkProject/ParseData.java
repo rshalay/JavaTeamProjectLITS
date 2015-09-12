@@ -3,7 +3,7 @@ package ua.com.lits.automation.java.homeworkProject;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ParseData {
+public class ParseData  implements Comparable<ParseData> {
 
 	protected String surname;
 	protected String post;
@@ -50,9 +50,14 @@ public class ParseData {
 		return sb.toString();
 	}
 
-	public int compareTo(ParseData p) {
-		int result = this.surname.compareTo(p.surname);
-		return result;
-	}
+    @Override
+	public int compareTo(ParseData s2) {
+		if (this.getSurname().compareTo(s2.getSurname()) != 0) {
+			return this.getSurname().compareTo(s2.getSurname());
+		} else if (this.getPost().compareTo(s2.getPost()) != 0) {
+			return this.getPost().compareTo(s2.getPost());
+		} else 
+		return this.getSalary().compareTo(s2.getSalary());
+		}
 
-}
+	}

@@ -25,7 +25,7 @@ public class StartCompilingProgram {
 		List<ParseData> parseData = objectMapper.readValue(input,
 				typeFactory.constructCollectionType(ArrayList.class, ParseData.class));
 		
-		Collections.sort(parseData,new SortData());
+		Collections.sort(parseData);
 		
 		for (ParseData item : parseData) {
 			
