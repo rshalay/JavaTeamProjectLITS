@@ -22,12 +22,12 @@ public class StartCompilingProgram {
 		objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		objectMapper.disable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
 		TypeFactory typeFactory = TypeFactory.defaultInstance();
-		List<ParseData> parseData = objectMapper.readValue(input,
-				typeFactory.constructCollectionType(ArrayList.class, ParseData.class));
+		List<ParseSortData> parseData = objectMapper.readValue(input,
+				typeFactory.constructCollectionType(ArrayList.class, ParseSortData.class));
 		
 		Collections.sort(parseData);
 		
-		for (ParseData item : parseData) {
+		for (ParseSortData item : parseData) {
 			
 			System.out.println(item.getSurname() + "\t" + item.getPost().concat(":") + "\t" + item.getSalary() + " $");
 		}
